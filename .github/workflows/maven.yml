@@ -10,10 +10,10 @@ jobs:
 # Folgendes
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 19
+      - name: Set up JDK 20
         uses: actions/setup-java@v3
         with:
-          java-version: "19"
+          java-version: "20"
           distribution: "temurin"
       - name: Compile, test & package our project with Maven
         run: mvn --batch-mode package --file pom.xml
